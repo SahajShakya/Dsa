@@ -1,0 +1,17 @@
+Data Types in Python, JavaScript, and C++
+
+Below is a summary of the primitive data types in Python, JavaScript, and C++:
+
++------------+------------------------------------------------------+----------------------------+-------------------------------+----------------------------+
+| Data Type  | Description                                          | Python Example              | JavaScript Example            | C++ Example                |
++------------+------------------------------------------------------+----------------------------+-------------------------------+----------------------------+
+| int        | Integer numbers, positive or negative whole numbers  | x = 42                      | let x = 42;                   | int x = 42;                |
+| float      | Real numbers (with decimals), floating-point numbers | y = 3.14                    | let y = 3.14;                 | float y = 3.14;            |
+| str        | Sequence of characters (string literals)             | name = "Alice"              | let name = "Alice";           | std::string name = "Alice";|
+| bool       | Logical values: True or False                        | is_valid = True             | let isValid = true;           | bool isValid = true;       |
+| NoneType   | Represents the absence of a value (null in other languages) | x = None                  | let x = null;                 | std::nullptr_t ptr = nullptr;|
+| bytes      | Immutable sequence of bytes, used for binary data   | b = b"data"                 | let b = new TextEncoder().encode("data"); | std::string b = "data";  |
+| Symbol     | A unique and immutable value used for object property keys (ES6+) | Not applicable            | let sym = Symbol("id");       | Not applicable             |
+| BigInt     | Integer type for arbitrarily large numbers (ES11+)   | Not applicable              | let bigNum = 1234567890123456789012345678901234567890n; | Not applicable             |
++------------+------------------------------------------------------+----------------------------+-------------------------------+----------------------------+
+

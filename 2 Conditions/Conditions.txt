@@ -1,0 +1,45 @@
+Conditional Statements Comparison in Python, JavaScript, and C++
+
+| Statement Type      | Description                                           | Python Example                                      | JavaScript Example                                   | C++ Example                                         |
+|---------------------|-------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| if                  | Used to execute a block of code if a condition is true. | if x > 5:                                           | if (x > 5) {                                         | if (x > 5) {                                       |
+|                     |                                                       |     print("x is greater than 5")                    |     console.log("x is greater than 5");               |     cout << "x is greater than 5";                  |
+| else                | Executes an alternative block of code if the condition is false. | else:                                              | else {                                               | else {                                             |
+|                     |                                                       |     print("x is not greater than 5")                |     console.log("x is not greater than 5");           |     cout << "x is not greater than 5";              |
+| elif/else if        | Used to check multiple conditions.                    | elif x == 5:                                        | else if (x == 5) {                                   | else if (x == 5) {                                 |
+|                     |                                                       |     print("x is equal to 5")                        |     console.log("x is equal to 5");                   |     cout << "x is equal to 5";                      |
+| Nested if/else      | An `if` or `else` inside another `if` or `else`.       | if x > 5:                                           | if (x > 5) {                                         | if (x > 5) {                                       |
+|                     |                                                       |     if y > 10:                                      |     if (y > 10) {                                    |     if (y > 10) {                                  |
+|                     |                                                       |         print("x is greater than 5 and y is greater than 10") |         console.log("x > 5 and y > 10");             |         cout << "x is greater than 5 and y > 10";   |
+|                     |                                                       |     else:                                          |     } else {                                         |     } else {                                       |
+|                     |                                                       |         print("x is greater than 5 but y is not greater than 10") |         console.log("x > 5 but y <= 10");            |         cout << "x is greater than 5 but y <= 10";  |
+
+Key Differences:
+1. **if**:
+   - **Python**: Uses the `if` keyword followed by a condition. The block of code under `if` is indented.
+   - **JavaScript**: Uses `if` followed by a condition in parentheses. Code blocks are enclosed in `{}`.
+   - **C++**: Similar to JavaScript, uses `if` followed by a condition in parentheses with code blocks inside `{}`.
+
+2. **else**:
+   - **Python**: Uses the `else` keyword for the alternative block of code. Code is indented under `else`.
+   - **JavaScript & C++**: Uses `else` similarly, followed by a block of code in `{}`.
+
+3. **elif/else if**:
+   - **Python**: Uses `elif` to check multiple conditions.
+   - **JavaScript & C++**: Uses `else if` for checking additional conditions in a chain of conditionals.
+
+4. **Nested if/else**:
+   - **Python**: `if` or `else` blocks can contain other `if`/`else` blocks. The indentation level changes to show the hierarchy.
+   - **JavaScript & C++**: Nested `if`/`else` statements use `{}` to group blocks of code inside the `if` or `else`.
+
+5. **Ternary Operator (Shorthand for if-else)**:
+   - **Python**: Uses the syntax `x if condition else y` for a shorthand if-else.
+   - **JavaScript & C++**: Uses the syntax `condition ? x : y`.
+
+Example of a Ternary Operator:
+
+Python:
+result = "Yes" if x > 5 else "No"
+
+JavaScript/C++:
+let result = (x > 5) ? "Yes" : "No";

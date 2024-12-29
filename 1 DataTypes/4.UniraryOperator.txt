@@ -1,0 +1,38 @@
+Unary Operators Comparison in Python, JavaScript, and C++
+
+| Operator Type       | Description                                           | Python Example                | JavaScript Example              | C++ Example                      |
+|---------------------|-------------------------------------------------------|--------------------------------|---------------------------------|-----------------------------------|
+| Unary Plus          | Returns the operand unchanged (i.e., identity).       | x = +5                         | let x = +5;                     | int x = +5;                       |
+| Unary Minus         | Negates the operand.                                 | x = -5                         | let x = -5;                     | int x = -5;                       |
+| Logical NOT         | Reverses the Boolean value of the operand.            | not x                          | !x                               | !x                                |
+| Bitwise NOT         | Inverts all the bits of the operand (one’s complement).| x = ~5                         | let x = ~5;                     | int x = ~5;                       |
+| Increment           | Increases the operand's value by 1 (pre/post increment). | Not available directly (use x += 1) | x++ or ++x                      | x++ or ++x                        |
+| Decrement           | Decreases the operand's value by 1 (pre/post decrement). | Not available directly (use x -= 1) | x-- or --x                      | x-- or --x                        |
+| Type Conversion     | Converts an operand to a specific type (e.g., int, float). | int(x), float(x)              | Number(x), String(x)            | static_cast<int>(x), float(x)     |
+| Dereference         | Access the value that a pointer is pointing to (only in C++). | Not applicable                | Not applicable                  | *pointer                          |
+| Address-of          | Retrieves the address of a variable (only in C++).    | Not applicable                | Not applicable                  | &x                                |
+
+Key Differences:
+1. Unary Plus/Minus:
+   - In all three languages, the unary `+` operator returns the operand unchanged, while the unary `-` operator negates the operand.
+
+2. Logical NOT:
+   - Python: Uses the `not` keyword to invert boolean values.
+   - JavaScript & C++: Uses the `!` symbol for logical negation.
+
+3. Bitwise NOT:
+   - All three languages support bitwise negation using `~`, which inverts all bits of the operand.
+
+4. Increment and Decrement:
+   - Python: Does not have `++` or `--` operators. You must use `+= 1` or `-= 1` instead.
+   - JavaScript & C++: Support both pre- and post-increment/decrement (`++` and `--`).
+
+5. Type Conversion:
+   - Python: Uses functions like `int(x)` or `float(x)` to convert types.
+   - JavaScript: Uses `Number(x)` or `String(x)` for conversions.
+   - C++: Uses `static_cast<type>(x)` for type conversion.
+
+6. Dereference and Address-of:
+   - Python: Not applicable, as it does not use pointers.
+   - JavaScript: Also does not use pointers, so dereferencing and address-of operators do not apply.
+   - C++: Uses the `*` operator to dereference a pointer and `&` to get the address of a variable.

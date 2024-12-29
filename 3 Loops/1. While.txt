@@ -1,0 +1,49 @@
+While Loop Comparison in Python, JavaScript, and C++
+
+| Loop Type           | Description                                           | Python Example                                      | JavaScript Example                                   | C++ Example                                         |
+|---------------------|-------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| while loop          | Repeats a block of code as long as a condition is true. | while x < 5:                                         | while (x < 5) {                                       | while (x < 5) {                                     |
+|                     |                                                       |     print(x)                                        |     console.log(x);                                   |     cout << x;                                      |
+|                     |                                                       |     x += 1                                          |     x += 1;                                          |     x++;                                           |
+|                     |                                                       |                                                   | }                                                   | }                                                   |
+
+Key Differences:
+1. **while loop**:
+   - **Python**: Uses the `while` keyword, followed by the condition, and then a block of code indented underneath.
+   - **JavaScript**: Uses the `while` keyword with the condition in parentheses, followed by the block of code inside curly braces `{}`.
+   - **C++**: Similar to JavaScript, uses `while` with the condition in parentheses, and the block of code is enclosed in `{}`.
+
+2. **Condition Check**:
+   - The `while` loop condition is evaluated before each iteration in all three languages. If the condition is `True` (or `True` equivalent), the loop executes. If the condition is `False` (or `False` equivalent), the loop terminates.
+
+3. **Block of Code**:
+   - **Python**: The block of code inside the `while` loop is indented (no need for curly braces).
+   - **JavaScript & C++**: The block of code inside the `while` loop is enclosed in curly braces `{}`.
+
+4. **Increment/Decrement**:
+   - **Python**: You can manually increment or decrement the loop variable (e.g., `x += 1`).
+   - **JavaScript & C++**: Similar to Python, you can increment or decrement the loop variable using `x++`, `++x`, or `x += 1`.
+
+Example:
+
+Python:
+x = 0 while x < 5: print(x) x += 1
+
+JavaScript:
+let x = 0; while (x < 5) { console.log(x); x++; }
+
+C++:
+#include <iostream>
+using namespace std;
+int main() {
+     int x = 0;
+     while (x < 5)
+        {
+            cout << x << endl;
+        x++;
+        }
+    return 0; }
+
+    Note:
+- In **Python**, indentation is crucial to define the body of the loop, while **JavaScript** and **C++** use curly braces `{}` to define the body of the loop.
+- Always ensure that the loop's condition eventually becomes `False`, or the loop will run indefinitely (an infinite loop).

@@ -1,0 +1,80 @@
+While Loop vs Do-While Loop Comparison in Python, JavaScript, and C++
+
+| Feature              | While Loop                                           | Do-While Loop                                      |
+|----------------------|------------------------------------------------------|---------------------------------------------------|
+| **Condition Check**   | Condition is checked before the loop starts.         | Condition is checked after the loop executes.     |
+| **Execution Guarantee** | The loop may not execute if the condition is false from the start. | The loop always executes at least once, even if the condition is false initially. |
+| **Syntax**            | Python: `while condition:`<br>JavaScript/C++: `while (condition) {}` | Python: Not directly available (can be simulated with `while`)<br>JavaScript/C++: `do { } while (condition);` |
+| **Python Example**    | `x = 0`<br> `while x < 5:`<br> `    print(x)`<br> `    x += 1` | `x = 0`<br> `while True:`<br> `    print(x)`<br> `    x += 1`<br> `    if x >= 5: break` |
+| **JavaScript Example**| `let x = 0;`<br> `while (x < 5) {`<br> `    console.log(x);`<br> `    x++;`<br> `}` | `let x = 0;`<br> `do {`<br> `    console.log(x);`<br> `    x++;`<br> `} while (x < 5);` |
+| **C++ Example**       | `int x = 0;`<br> `while (x < 5) {`<br> `    cout << x;`<br> `    x++;`<br> `}` | `int x = 0;`<br> `do {`<br> `    cout << x;`<br> `    x++;`<br> `} while (x < 5);` |
+
+### Key Differences Between `while` and `do-while` Loops:
+
+1. **Condition Check**:
+   - **While Loop**: The condition is checked **before** the loop executes, so if the condition is `false` initially, the loop might not execute at all.
+   - **Do-While Loop**: The condition is checked **after** the loop executes, so the loop is guaranteed to execute at least once, even if the condition is `false` at the start.
+
+2. **Execution Guarantee**:
+   - **While Loop**: If the condition is `false` right away, the loop body will not execute.
+   - **Do-While Loop**: The loop will always execute at least once, because the condition is evaluated after the loop runs.
+
+3. **Use Cases**:
+   - **While Loop**: Best used when you need to repeat an action only if a condition is true from the beginning (e.g., processing items in a list until the end or waiting for user input).
+   - **Do-While Loop**: Useful when you need to execute a block of code at least once, such as prompting a user for input or executing a menu at least once before checking for a condition.
+
+4. **Syntax**:
+   - **Python**: Python only has a `while` loop and does not have a built-in `do-while`. However, you can simulate it using a `while True` loop with a `break` statement.
+   - **JavaScript & C++**: Both support the `do-while` loop directly, where the loop runs at least once before checking the condition.
+
+### Example Comparison:
+
+**While Loop Example (All Languages)**:
+- **Python**:
+  ```python
+  x = 0
+  while x < 5:
+      print(x)
+      x += 1
+JavaScript:
+let x = 0;
+while (x < 5) {
+    console.log(x);
+    x++;
+}
+C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 0;
+    while (x < 5) {
+        cout << x << endl;
+        x++;
+    }
+    return 0;
+}
+Do-While Loop Example (Simulated for Python, Native for JavaScript & C++):
+Python (simulated):
+x = 0
+while True:
+    print(x)
+    x += 1
+    if x >= 5:
+        break
+JavaScript:
+let x = 0;
+do {
+    console.log(x);
+    x++;
+} while (x < 5);
+C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 0;
+    do {
+        cout << x << endl;
+        x++;
+    } while (x < 5);
+    return 0;
+}
